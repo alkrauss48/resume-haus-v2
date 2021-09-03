@@ -1,0 +1,8 @@
+baseUrl: 'http://resumehaus.com'
+handle: en_us
+hasUrls: true
+language: en-US
+name: 'Resume Haus (en-US)'
+primary: true
+siteGroup: 3579409d-3cc9-4c7a-a65e-a675bfe120a3 # Resume Haus (en-US)
+sortOrder: 1

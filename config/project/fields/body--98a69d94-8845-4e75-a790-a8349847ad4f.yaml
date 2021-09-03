@@ -1,0 +1,12 @@
+contentColumnType: string
+fieldGroup: 20d0b3c0-e1c3-4ba1-8258-808332239fba # Default
+handle: body
+instructions: null
+name: Body
+searchable: true
+settings:
+  columnType: text
+  configFile: Standard.json
+translationKeyFormat: null
+translationMethod: site
+type: craft\redactor\Field

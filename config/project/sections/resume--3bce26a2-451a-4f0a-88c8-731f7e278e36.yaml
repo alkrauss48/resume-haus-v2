@@ -1,0 +1,15 @@
+enableVersioning: true
+handle: resume
+name: Resume
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  5c40e9cb-7114-4a81-bb5a-7e41c1d1b25e: # Resume Haus (en-US)
+    enabledByDefault: true
+    hasUrls: true
+    template: resume
+    uriFormat: '{slug}'
+type: channel

@@ -1,0 +1,8 @@
+/.env
+/.idea
+/vendor
+/volumes
+/node_modules
+.DS_Store
+license.key
+*.sql

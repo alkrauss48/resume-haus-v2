@@ -1,0 +1,30 @@
+field: 59e0cbb3-e5c1-4202-aded-220aecef6e07 # Resume Blocks
+fieldLayouts:
+  f28eb501-f847-4b8e-8780-9e4ac28e0edc:
+    tabs:
+      -
+        fields:
+          bb855769-7e53-4719-99d3-1291dc1ea6cd: # Body
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  bb855769-7e53-4719-99d3-1291dc1ea6cd: # Body
+    contentColumnType: string
+    fieldGroup: null
+    handle: body
+    instructions: 'The main body for this text block'
+    name: Body
+    searchable: true
+    settings:
+      cleanupHtml: '1'
+      columnType: text
+      configFile: ''
+      purifyHtml: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: text
+name: Text
+sortOrder: 2

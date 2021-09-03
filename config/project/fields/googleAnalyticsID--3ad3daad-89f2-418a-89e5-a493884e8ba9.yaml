@@ -1,0 +1,15 @@
+contentColumnType: text
+fieldGroup: 20d0b3c0-e1c3-4ba1-8258-808332239fba # Default
+handle: googleAnalyticsID
+instructions: 'Optional. Google Analytics is a way to track how many viewers have viewed your site (and a lot more). Learn more at http://www.google.com/analytics/'
+name: 'Google Analytics ID'
+searchable: true
+settings:
+  charLimit: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: 'e.g. UA-12345678-9'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

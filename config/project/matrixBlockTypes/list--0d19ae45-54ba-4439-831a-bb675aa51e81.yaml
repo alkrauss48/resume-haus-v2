@@ -1,0 +1,49 @@
+field: 59e0cbb3-e5c1-4202-aded-220aecef6e07 # Resume Blocks
+fieldLayouts:
+  e2d3e1ec-7a81-4185-a52b-3352c3866e17:
+    tabs:
+      -
+        fields:
+          71317842-4cbf-4e25-b59e-0e913fb93ab4: # List Body
+            required: false
+            sortOrder: 2
+          f080972b-de4b-4ebe-90b8-c1dc5a3bb815: # List Title
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  71317842-4cbf-4e25-b59e-0e913fb93ab4: # List Body
+    contentColumnType: string
+    fieldGroup: null
+    handle: listBody
+    instructions: 'Body of your list.'
+    name: 'List Body'
+    searchable: true
+    settings:
+      cleanupHtml: '1'
+      columnType: text
+      configFile: ''
+      purifyHtml: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  f080972b-de4b-4ebe-90b8-c1dc5a3bb815: # List Title
+    contentColumnType: text
+    fieldGroup: null
+    handle: listTitle
+    instructions: 'Title of your list.'
+    name: 'List Title'
+    searchable: true
+    settings:
+      charLimit: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: list
+name: List
+sortOrder: 6
