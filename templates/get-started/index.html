@@ -18,8 +18,9 @@
       <!-- Content -->
       <article id="content">
         <header>
-          <h2>Get Started</h2>
-          <p>Let's build an awesome resume together.</p>
+          <h2>Thank You for the Years of Support</h2>
+          <p>Resume Haus is no longer offered as a service.</p>
+          <hr>
         </header>
         <p>Paper resumes dominate the job searching market, but you can't
         do much with them. No hiring manager will ever see your Microsoft Word
@@ -42,29 +43,6 @@
         <a class="image featured"><img src="images/black-blurs.jpg" alt="" /></a>
       </article>
       <article>
-        <header>
-          <h2>How It Works</h2>
-          <p>You don't pay a cent until your
-          resume is built. Here's the plan:</p>
-        </header>
-        <ul>
-          <li><p>1) Complete the form below and upload your resume. Leave any
-          additional information such as your desired theme or your
-          Google Analytics ID number.</p></li>
-          <li><p>2) We'll receive your information and will begin building your
-          resume.</p></li>
-          <li><p>3) Once we're complete, we'll email you back with a public URL
-          for your resume to verify everything
-          looks good. If not, we'll hammer out what needs fixing.</p></li>
-          <li><p>4) After everything looks good, we'll link you to a payment
-          page. If we don't receive payment within a week of completion, your
-          resume will be temporarily removed until payment is completed.</p></li>
-          <li><p>5) We're done! You can link your resume to anyone you want
-          to impress. We will personally host your resume so you don't need to
-          worry about a thing - your resume will be publicly available at
-          <b>http://resumehaus.com/your-name</b>.</p></li>
-          <li><p></p></li>
-        </ul>
         <p>Check out some more features Resume Haus offers:</p>
       </article>
 
@@ -103,16 +81,6 @@
         </section>
       </div>
       <article>
-        <header>
-          <h2 style="margin-top: 2em;">Pricing</h2>
-          <hr />
-          <h4>Initial Cost</h4>
-          <p>$200 - Building your resume, one month of unlimited edits, and
-          lifetime hosting of your resume.</p>
-          <hr />
-          <h4>Down-The-Road Cost</h4>
-          <p>$25 - One month's worth of unlimited edits whenever you need to update your resume.</p>
-        </header>
         <p><a class="button" href="/#examples">See our Example Resumes</a></p>
         <p>That's it! If you still have questions, <a
           href="mailto:alkrauss48@gmail.com">shoot us an email</a>.</p>
@@ -123,68 +91,6 @@
 
   <!-- Footer -->
   <div id="footer-wrapper">
-    <div id="footer" class="container">
-      <header class="major">
-        <h2>Submit Your Resume to Get Started</h2>
-        <p>Fill out the following form to get your Resume Haus resume
-        underway. State which theme you want in your message, as well as any
-        additional information. We'll email you with a first draft resume within a week!</p>
-      </header>
-      <div class="row">
-        <section class="12u 12u(narrower)">
-          {% macro errorList(errors) %}
-          {% if errors %}
-          <ul class="errors">
-            {% for error in errors %}
-            <li>{{ error }}</li>
-            {% endfor %}
-          </ul>
-          {% endif %}
-          {% endmacro %}
-
-          {% from _self import errorList %}
-          <form method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
-            {{ getCsrfInput() }}
-            <input type="hidden" name="action" value="contactForm/sendMessage">
-            <input type="hidden" name="redirect" value="/thank-you">
-
-            <div class="row 50%">
-              <div class="4u 12u(mobile)">
-                <input id="fromName" name="fromName" placeholder="Name" type="text"
-                  value="{% if message is defined %}{{ message.fromName }}{% endif %}"
-                />
-                {{ message is defined and message ?  errorList(message.getErrors('fromName')) }}
-              </div>
-              <div class="4u 12u(mobile)">
-                <input id="fromEmail" name="fromEmail" placeholder="Email" type="text"
-                  value="{% if message is defined %}{{ message.fromEmail }}{% endif %}"
-                />
-                {{ message is defined and message ?  errorList(message.getErrors('fromEmail')) }}
-              </div>
-              <div class="4u 12u(mobile)">
-                <label for="attachment">Current Resume:</label>
-                <input name="attachment" id="attachment" type="file" />
-                {{ message is defined and message ?  errorList(message.getErrors('attachment')) }}
-              </div>
-            </div>
-            <div class="row 50%">
-              <div class="12u">
-                <textarea name="message" placeholder="Message">{% if message is defined %}{{ message.message }}{% endif %}</textarea>
-                {{ message is defined and message ? errorList(message.getErrors('message')) }}
-              </div>
-            </div>
-            <div class="row 50%">
-              <div class="12u">
-                <ul class="actions">
-                  <li><input type="submit" value="Submit" /></li>
-                  <li><input type="reset" value="Clear form" /></li>
-                </ul>
-              </div>
-            </div>
-          </form>
-        </section>
-      </div>
-    </div>
     {% include 'partials/_footer' %}
   </div>
 
