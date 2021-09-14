@@ -1,0 +1,126 @@
+{% block content %}
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Resume Haus</title>
+    {% include 'partials/_head' %}
+  </head>
+  <body class="homepage">
+
+    <!-- Header -->
+      <div id="header-wrapper">
+        {% include 'partials/_header' %}
+
+
+        <!-- Hero -->
+          <section id="hero" class="container">
+            <header>
+              <h2>Share a resume <br />you can be proud of</h2>
+            </header>
+            <p>Built by <a href="http://thesocietea.org">Aaron Krauss</a>
+            <ul class="actions">
+              <li><a class="learn-more button" href="#learn-more">Learn More</a></li>
+            </ul>
+          </section>
+
+      </div>
+
+    <!-- Features 1 -->
+      <div id="learn-more" class="wrapper">
+        <div class="container">
+          <div class="row">
+            <section class="6u 12u(narrower) feature">
+              <div class="image-wrapper first">
+                <a class="image featured first"><img src="images/home1.jpg" alt="" /></a>
+              </div>
+              <header>
+                <h2>Beautiful on every<br />screen size</h2>
+              </header>
+              <p>Desktop. Phone. Tablet. Large Monitor. In today's world, your
+              resume can be viewed in many different ways. No matter the medium,
+              we'll make sure your resume always looks stunning.</p>
+            </section>
+            <section class="6u 12u(narrower) feature">
+              <div class="image-wrapper">
+                <a class="image featured"><img src="images/home2.jpg" alt="" /></a>
+              </div>
+              <header>
+                <h2>Start your career<br /> search off right</h2>
+              </header>
+              <p>Whether you're just starting your job search, making a career
+              change, or looking for a better opportunity, our resume designs
+              will help you get the attention you deserve.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+
+    <!-- Promo -->
+      <div id="promo-wrapper">
+        <section id="promo">
+          <h2>Show off a resume that truly turns heads</h2>
+          <a href="/get-started" class="button">Get Started</a>
+        </section>
+      </div>
+
+    <!-- Features 2 -->
+      <div id="examples" class="wrapper">
+        <section class="container">
+          <header class="major">
+            <h2>Check out the different resume themes we offer</h2>
+            <ul class="actions major">
+              <li><a class="button" href="/demo?theme=cerulean">Cerulean</a></li>
+              <li><a class="button" href="/demo?theme=cosmo">Cosmo</a></li>
+              <li><a class="button" href="/demo?theme=cyborg">Cyborg</a></li>
+              <li><a class="button" href="/demo?theme=darkly">Darkly</a></li>
+              <li><a class="button" href="/demo?theme=flatly">Flatly</a></li>
+              <li><a class="button" href="/demo?theme=journal">Journal</a></li>
+              <li><a class="button" href="/demo?theme=lumen">Lumen</a></li>
+              <li><a class="button" href="/demo?theme=paper">Paper</a></li>
+              <li><a class="button" href="/demo?theme=readable">Readable</a></li>
+              <li><a class="button" href="/demo?theme=sandstone">Sandstone</a></li>
+              <li><a class="button" href="/demo?theme=simplex">Simplex</a></li>
+              <li><a class="button" href="/demo?theme=slate">Slate</a></li>
+              <li><a class="button" href="/demo?theme=spacelab">Spacelab</a></li>
+              <li><a class="button" href="/demo?theme=superhero">Superhero</a></li>
+              <li><a class="button" href="/demo?theme=united">United</a></li>
+              <li><a class="button" href="/demo?theme=yeti">Yeti</a></li>
+            </ul>
+          </header>
+        </section>
+      </div>
+
+    <!-- Footer -->
+      <div id="footer-wrapper">
+        <div id="footer" class="container">
+          <header class="major">
+            <h2>Ready to learn more?</h2>
+          </header>
+          <div class="row">
+            <section class="9u 12u(narrower)">
+            <p>Move on over to our Get Started page and see where to go
+            from here.
+            If you want to take the next step, you can submit your resume to us and we'll take care of
+            the rest.</p>
+            <ul class="actions">
+              <li><a href="/get-started" class="button">Get Started</a></li>
+            </ul>
+            </section>
+            <section class="3u 12u(narrower)">
+              <div class="row 0%">
+                <ul class="divided icons 12u 12u(mobile)">
+                  <li class="icon fa-twitter"><a href="https://twitter.com/thecodeboss">@thecodeboss</a></li>
+                </ul>
+                <ul class="divided icons 12u 12u(mobile)">
+                  <li class="icon fa-home"><a href="http://thesocietea.org">Aaron Krauss</a></li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+        {% include 'partials/_footer' %}
+      </div>
+
+  </body>
+</html>
+{% endblock %}

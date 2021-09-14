@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ entry.title }} Curriculum Vitae</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cirriculum Vitae for {{ entry.title }}">
+  <meta name="author" content="Aaron L. Krauss">
+
+  {% if craft.request.getQuery('theme') %}
+    <link href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/{{ craft.request.getQuery('theme') }}/bootstrap.min.css" rel="stylesheet">
+  {% else %}
+    <link href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/{{ entry.theme }}/bootstrap.min.css" rel="stylesheet">
+  {% endif %}
+
+  {% include 'resume/_styles' %}
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body class="preview top-padding">
+  <section role="main" class="container">
+
+    {% include 'resume/_header' %}
+
+    {% for block in entry.resumeBlocks %}
+      <article class="col-lg-12 {{ block.type }}-block">
+        {% include 'resume/blocks/_' ~ block.type ignore missing %}
+      </article>
+    {% endfor %}
+
+    {% include 'resume/_footer' %}
+
+  </section>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', '{{ entry.googleAnalyticsID }}', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<div class="row top-padding">
+  <div class="col-sm-8">
+    <h4>{{ block.companyName }}</h4>
+    {% if block.companyWebsite %}
+    <a href="{{ block.companyWebsite }}" target="_BLANK">
+      <span class="badge">Website <i class="glyphicon glyphicon-chevron-right"></i></span>
+    </a>
+    {% endif %}
+  </div>
+  <div class="col-sm-4"><h4 class="pull-right hidden-xs">{{ block.companyLocation }}</h4></div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6"><span class="small-italic">{{ block.jobTitle }}</span></div>
+  <div class="col-sm-6">
+    <span class="visible-xs label label-default">{{ block.datesEmployed }}</span>
+    <span class="hidden-xs pull-right small-italic">{{ block.datesEmployed }}</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="work-experience-content col-lg-12">{{ block.mainContent }}</div>
+</div>

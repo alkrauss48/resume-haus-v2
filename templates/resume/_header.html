@@ -1,0 +1,19 @@
+<header class="jumbotron">
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Curriculum Vitae for</h3>
+      <h1>{{ entry.title }}</h1>
+      <address>
+        {% if entry.webSite %}
+          <a target="_blank" href="{{entry.webSite}}">{{entry.webSite | replace({"http://": "", "https://":""}) }}</a><br />
+        {% endif %}
+        {% if entry.emailAddress %}
+          <a href="mailto:{{entry.emailAddress}}">{{entry.emailAddress}}</a><br />
+        {% endif %}
+        {% if entry.phoneNumber %}
+          <a href="tel:{{ entry.phoneNumber | replace({'.': '', '-': ''}) }}">{{entry.phoneNumber}}</a><br />
+        {% endif %}
+      </address>
+    </div>
+  </div>
+</header>

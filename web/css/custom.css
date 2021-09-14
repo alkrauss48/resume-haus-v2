@@ -1,0 +1,26 @@
+header.major h2 {
+  margin-bottom: 1em;
+}
+
+header.major ul.major li {
+  margin-bottom: 1em;
+}
+
+form input[type="file"] {
+  width: 100%;
+}
+
+#logo img {
+  width: 160px;
+  padding: .75em 0;
+}
+
+#logo a {
+  min-height: 4em;
+}
+
+@media screen and (max-width: 480px){
+  #logo img {
+    padding: .5em 0;
+  }
+}
