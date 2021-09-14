@@ -1,4 +1,5 @@
-baseUrl: 'http://resumehaus.com'
+baseUrl: 'http://resume.thecodeboss.dev'
+enabled: true
 handle: en_us
 hasUrls: true
 language: en-US
