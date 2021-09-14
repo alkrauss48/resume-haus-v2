@@ -10,7 +10,12 @@ FROM craftcms/nginx:8.0
 USER root
 RUN apk add --no-cache mysql-client
 USER www-data
+WORKDIR /app
 
 # the user is `www-data`, so we copy the files using the user and group
-COPY --chown=www-data:www-data --from=vendor /app/vendor/ /app/vendor/
-COPY --chown=www-data:www-data . .
+COPY --chown=www-data:www-data --from=vendor /app/vendor/ vendor
+
+COPY --chown=www-data:www-data ./config config
+COPY --chown=www-data:www-data ./modules modules
+COPY --chown=www-data:www-data ./templates templates
+COPY --chown=www-data:www-data ./web web
