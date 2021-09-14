@@ -8,8 +8,8 @@
   <meta name="description" content="Cirriculum Vitae for {{ entry.title }}">
   <meta name="author" content="Aaron L. Krauss">
 
-  {% if craft.request.getQuery('theme') %}
-    <link href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/{{ craft.request.getQuery('theme') }}/bootstrap.min.css" rel="stylesheet">
+  {% if craft.app.request.getQueryParam('theme') %}
+    <link href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/{{ craft.app.request.getQueryParam('theme') }}/bootstrap.min.css" rel="stylesheet">
   {% else %}
     <link href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/{{ entry.theme }}/bootstrap.min.css" rel="stylesheet">
   {% endif %}
@@ -26,7 +26,7 @@
 
     {% include 'resume/_header' %}
 
-    {% for block in entry.resumeBlocks %}
+    {% for block in entry.resumeBlocks.all() %}
       <article class="col-lg-12 {{ block.type }}-block">
         {% include 'resume/blocks/_' ~ block.type ignore missing %}
       </article>
