@@ -9,7 +9,7 @@ services:
       - db
     volumes:
       - .:/app
-      # - ./storage:/app/storage
+      - ./storage:/app/storage
 
   db:
     image: mysql:5.7
