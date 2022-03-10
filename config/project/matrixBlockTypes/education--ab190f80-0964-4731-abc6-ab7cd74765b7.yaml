@@ -1,28 +1,28 @@
-field: 59e0cbb3-e5c1-4202-aded-220aecef6e07 # Resume Blocks
+field: 59e0cbb3-e5c1-4202-aded-220aecef6e07
 fieldLayouts:
   e667add5-be7d-47b3-9420-be069536759a:
     tabs:
       -
         fields:
-          5e9f447d-cf2f-4c03-9e6e-ebe07ae771fe: # Attendance Dates
+          5e9f447d-cf2f-4c03-9e6e-ebe07ae771fe:
             required: false
             sortOrder: 4
-          5ea67989-623f-4c1b-b05d-4b3a1b0101f6: # Main Content
+          5ea67989-623f-4c1b-b05d-4b3a1b0101f6:
             required: false
             sortOrder: 5
-          129a5baa-a91b-4c89-bb3a-ca5118cfa43c: # Degree Title
+          129a5baa-a91b-4c89-bb3a-ca5118cfa43c:
             required: false
             sortOrder: 3
-          a1c9e1f0-740b-49c8-a06a-14405ce4a443: # School Name
+          a1c9e1f0-740b-49c8-a06a-14405ce4a443:
             required: false
             sortOrder: 1
-          b01e6431-581e-4b15-870d-2c1b6ea3029b: # School Location
+          b01e6431-581e-4b15-870d-2c1b6ea3029b:
             required: false
             sortOrder: 2
         name: Content
         sortOrder: 1
 fields:
-  5e9f447d-cf2f-4c03-9e6e-ebe07ae771fe: # Attendance Dates
+  5e9f447d-cf2f-4c03-9e6e-ebe07ae771fe:
     contentColumnType: text
     fieldGroup: null
     handle: attendanceDates
@@ -38,7 +38,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  5ea67989-623f-4c1b-b05d-4b3a1b0101f6: # Main Content
+  5ea67989-623f-4c1b-b05d-4b3a1b0101f6:
     contentColumnType: string
     fieldGroup: null
     handle: mainContent
@@ -53,7 +53,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
-  129a5baa-a91b-4c89-bb3a-ca5118cfa43c: # Degree Title
+  129a5baa-a91b-4c89-bb3a-ca5118cfa43c:
     contentColumnType: text
     fieldGroup: null
     handle: degreeTitle
@@ -69,7 +69,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  a1c9e1f0-740b-49c8-a06a-14405ce4a443: # School Name
+  a1c9e1f0-740b-49c8-a06a-14405ce4a443:
     contentColumnType: text
     fieldGroup: null
     handle: schoolName
@@ -85,7 +85,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  b01e6431-581e-4b15-870d-2c1b6ea3029b: # School Location
+  b01e6431-581e-4b15-870d-2c1b6ea3029b:
     contentColumnType: text
     fieldGroup: null
     handle: schoolLocation

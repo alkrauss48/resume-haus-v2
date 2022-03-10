@@ -1,7 +1,6 @@
 version: "3.6"
 services:
   web:
-    # image: alkrauss48/resume-haus:latest
     build:
       context: .
       dockerfile: docker/web/Dockerfile
@@ -11,8 +10,11 @@ services:
     depends_on:
       - db
     volumes:
-      # - .:/app
+      - ./config:/app/config
+      - ./modules:/app/modules
+      - ./templates:/app/templates
       - ./storage:/app/storage
+      - ./web:/app/web
 
   db:
     build:

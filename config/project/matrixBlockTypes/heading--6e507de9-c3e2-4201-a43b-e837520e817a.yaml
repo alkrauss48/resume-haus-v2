@@ -1,16 +1,16 @@
-field: 59e0cbb3-e5c1-4202-aded-220aecef6e07 # Resume Blocks
+field: 59e0cbb3-e5c1-4202-aded-220aecef6e07
 fieldLayouts:
   96b1bb31-02b7-4102-9a17-5be5db081dc9:
     tabs:
       -
         fields:
-          afbe8279-652f-48ee-983f-65a2bcc79c87: # Heading
+          afbe8279-652f-48ee-983f-65a2bcc79c87:
             required: true
             sortOrder: 1
         name: Content
         sortOrder: 1
 fields:
-  afbe8279-652f-48ee-983f-65a2bcc79c87: # Heading
+  afbe8279-652f-48ee-983f-65a2bcc79c87:
     contentColumnType: text
     fieldGroup: null
     handle: heading
