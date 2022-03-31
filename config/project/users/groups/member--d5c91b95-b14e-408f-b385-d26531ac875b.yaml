@@ -4,5 +4,6 @@ name: Member
 permissions:
   - accesscp
   - 'createentries:3bce26a2-451a-4f0a-88c8-731f7e278e36' # Resume
+  - 'publishentries:3bce26a2-451a-4f0a-88c8-731f7e278e36' # Resume
   - 'deleteentries:3bce26a2-451a-4f0a-88c8-731f7e278e36' # Resume
   - 'editentries:3bce26a2-451a-4f0a-88c8-731f7e278e36' # Resume
