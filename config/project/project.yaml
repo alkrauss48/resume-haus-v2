@@ -1,17 +1,14 @@
-dateModified: 1648763751
+dateModified: 1648770377
 email:
   fromEmail: alkrauss48@gmail.com
   fromName: Resume
   template: null
   transportType: craft\mail\transportadapters\Sendmail
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
 meta:
   __names__:
     0d19ae45-54ba-4439-831a-bb675aa51e81: List # List
     3ad3daad-89f2-418a-89e5-a493884e8ba9: 'Google Analytics ID' # Google Analytics ID
+    3b17c04c-c155-41c8-b46a-e9b3d9058c0e: 'Public Schema' # Public Schema
     3bce26a2-451a-4f0a-88c8-731f7e278e36: Resume # Resume
     5c40e9cb-7114-4a81-bb5a-7e41c1d1b25e: 'Resume Haus (en-US)' # Resume Haus (en-US)
     5e7c1a3c-fb71-4178-8ece-e873e7e0d0cc: 'Job Title' # Job Title
@@ -68,5 +65,5 @@ system:
   edition: pro
   live: true
   name: 'Resume Haus'
-  schemaVersion: 3.7.8
+  schemaVersion: 3.7.33
   timeZone: UTC

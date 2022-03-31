@@ -3,25 +3,45 @@ fieldLayouts:
   f28eb501-f847-4b8e-8780-9e4ac28e0edc:
     tabs:
       -
-        fields:
-          bb855769-7e53-4719-99d3-1291dc1ea6cd: # Body
-            required: false
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: bb855769-7e53-4719-99d3-1291dc1ea6cd # Body
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   bb855769-7e53-4719-99d3-1291dc1ea6cd: # Body
-    contentColumnType: string
+    columnSuffix: null
+    contentColumnType: text
     fieldGroup: null
     handle: body
     instructions: 'The main body for this text block'
     name: Body
     searchable: true
     settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
       cleanupHtml: '1'
       columnType: text
-      configFile: ''
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
       purifyHtml: ''
+      redactorConfig: ''
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field

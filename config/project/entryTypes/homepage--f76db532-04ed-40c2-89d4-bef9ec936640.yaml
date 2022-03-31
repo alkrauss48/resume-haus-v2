@@ -4,41 +4,90 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
             instructions: null
-            label: 'Full Name'
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
           -
             fieldUid: b1728805-d5d0-44a4-a498-b609f35b1361 # Web Site
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: c5ff41e6-e696-45f2-b7c3-9ae40be874bc # Email Address
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 7f7aa23e-bcb7-4e8b-825b-28bcd7f1e639 # Phone Number
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: 'Basic Info'
         sortOrder: 1
       -
         elements:
           -
             fieldUid: 59e0cbb3-e5c1-4202-aded-220aecef6e07 # Resume Blocks
-            required: true
+            instructions: null
+            label: null
+            required: 1
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Resume
         sortOrder: 2
       -
         elements:
           -
             fieldUid: 388a1cf0-91d1-46e9-864e-6177844d9933 # Theme
-            required: true
+            instructions: null
+            label: null
+            required: 1
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 3ad3daad-89f2-418a-89e5-a493884e8ba9 # Google Analytics ID
-            required: false
+            instructions: null
+            label: null
+            required: 0
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Settings
         sortOrder: 3
 handle: homepage
@@ -47,3 +96,5 @@ name: GHomepage
 section: 3bce26a2-451a-4f0a-88c8-731f7e278e36 # Resume
 sortOrder: 0
 titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

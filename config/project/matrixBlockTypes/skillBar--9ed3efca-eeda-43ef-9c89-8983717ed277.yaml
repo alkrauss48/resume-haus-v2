@@ -3,17 +3,30 @@ fieldLayouts:
   e0f79c5c-3b3c-4dd4-b7a7-9e21d49cac48:
     tabs:
       -
-        fields:
-          246ac786-a0a2-4cc2-9753-faf42e7db69d: # Skill Title
-            required: false
-            sortOrder: 1
-          465b0663-a60a-44ba-9868-6299b27b2e73: # Skill Percentage
-            required: false
-            sortOrder: 2
+        elements:
+          -
+            fieldUid: 246ac786-a0a2-4cc2-9753-faf42e7db69d # Skill Title
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 465b0663-a60a-44ba-9868-6299b27b2e73 # Skill Percentage
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   246ac786-a0a2-4cc2-9753-faf42e7db69d: # Skill Title
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: skillTitle
@@ -21,15 +34,19 @@ fields:
     name: 'Skill Title'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   465b0663-a60a-44ba-9868-6299b27b2e73: # Skill Percentage
+    columnSuffix: null
     contentColumnType: smallint(3)
     fieldGroup: null
     handle: skillPercentage
@@ -37,9 +54,15 @@ fields:
     name: 'Skill Percentage'
     searchable: true
     settings:
-      decimals: '0'
-      max: '100'
-      min: '0'
+      decimals: 0
+      defaultValue: null
+      max: 100
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: null
+      suffix: null
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Number

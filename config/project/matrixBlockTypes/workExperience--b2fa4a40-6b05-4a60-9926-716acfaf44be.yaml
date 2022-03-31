@@ -3,29 +3,66 @@ fieldLayouts:
   e564e02d-5066-4de7-af01-1e5e17e04268:
     tabs:
       -
-        fields:
-          5e7c1a3c-fb71-4178-8ece-e873e7e0d0cc: # Job Title
-            required: false
-            sortOrder: 4
-          6e129f3a-b85f-4131-95fc-e202a39a8a73: # Company Location
-            required: false
-            sortOrder: 3
-          30f68721-b84b-4481-af19-8dce25d3560d: # Company name
-            required: false
-            sortOrder: 1
-          c667b680-8bdb-4574-a436-74f70b26caa0: # Main Content
-            required: false
-            sortOrder: 6
-          d77a7ce8-8506-448a-90bc-8f425f273d60: # Company Website
-            required: false
-            sortOrder: 2
-          f513dbac-d077-49f1-9d17-7ca2343506c6: # Dates Employed
-            required: false
-            sortOrder: 5
+        elements:
+          -
+            fieldUid: 30f68721-b84b-4481-af19-8dce25d3560d # Company name
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d77a7ce8-8506-448a-90bc-8f425f273d60 # Company Website
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6e129f3a-b85f-4131-95fc-e202a39a8a73 # Company Location
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5e7c1a3c-fb71-4178-8ece-e873e7e0d0cc # Job Title
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f513dbac-d077-49f1-9d17-7ca2343506c6 # Dates Employed
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c667b680-8bdb-4574-a436-74f70b26caa0 # Main Content
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   5e7c1a3c-fb71-4178-8ece-e873e7e0d0cc: # Job Title
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: jobTitle
@@ -33,15 +70,19 @@ fields:
     name: 'Job Title'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   6e129f3a-b85f-4131-95fc-e202a39a8a73: # Company Location
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: companyLocation
@@ -49,15 +90,19 @@ fields:
     name: 'Company Location'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
       placeholder: 'e.g. Oklahoma City, OK'
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   30f68721-b84b-4481-af19-8dce25d3560d: # Company name
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: companyName
@@ -65,30 +110,48 @@ fields:
     name: 'Company name'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   c667b680-8bdb-4574-a436-74f70b26caa0: # Main Content
-    contentColumnType: string
+    columnSuffix: null
+    contentColumnType: text
     fieldGroup: null
     handle: mainContent
     instructions: 'The main body that you wish to write about what you did at this job.'
     name: 'Main Content'
     searchable: true
     settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
       cleanupHtml: '1'
       columnType: text
-      configFile: ''
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
       purifyHtml: ''
+      redactorConfig: ''
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
   d77a7ce8-8506-448a-90bc-8f425f273d60: # Company Website
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: companyWebsite
@@ -96,15 +159,19 @@ fields:
     name: 'Company Website'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   f513dbac-d077-49f1-9d17-7ca2343506c6: # Dates Employed
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: datesEmployed
@@ -112,11 +179,14 @@ fields:
     name: 'Dates Employed'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
       placeholder: 'e.g. August 2008 - January 2012'
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

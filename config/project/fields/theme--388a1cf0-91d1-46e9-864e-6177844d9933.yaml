@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: 20d0b3c0-e1c3-4ba1-8258-808332239fba # Default
 handle: theme
@@ -5,194 +6,195 @@ instructions: 'The design theme for your template'
 name: Theme
 searchable: true
 settings:
+  optgroups: true
   options:
     -
       __assoc__:
-        -
-          - default
-          - ''
         -
           - label
           - Cerulean
         -
           - value
           - cerulean
-    -
-      __assoc__:
         -
           - default
           - ''
+    -
+      __assoc__:
         -
           - label
           - Cosmo
         -
           - value
           - cosmo
-    -
-      __assoc__:
         -
           - default
           - ''
+    -
+      __assoc__:
         -
           - label
           - Custom
         -
           - value
           - custom
-    -
-      __assoc__:
         -
           - default
           - ''
+    -
+      __assoc__:
         -
           - label
           - Cyborg
         -
           - value
           - cyborg
-    -
-      __assoc__:
         -
           - default
           - ''
+    -
+      __assoc__:
         -
           - label
           - Darkly
         -
           - value
           - darkly
-    -
-      __assoc__:
         -
           - default
           - ''
+    -
+      __assoc__:
         -
           - label
           - Flatly
         -
           - value
           - flatly
-    -
-      __assoc__:
         -
           - default
           - ''
+    -
+      __assoc__:
         -
           - label
           - Journal
         -
           - value
           - journal
-    -
-      __assoc__:
         -
           - default
           - ''
+    -
+      __assoc__:
         -
           - label
           - Lumen
         -
           - value
           - lumen
-    -
-      __assoc__:
         -
           - default
           - ''
+    -
+      __assoc__:
         -
           - label
           - Paper
         -
           - value
           - paper
-    -
-      __assoc__:
         -
           - default
           - ''
+    -
+      __assoc__:
         -
           - label
           - Readable
         -
           - value
           - readable
-    -
-      __assoc__:
         -
           - default
           - ''
+    -
+      __assoc__:
         -
           - label
           - Sandstone
         -
           - value
           - sandstone
-    -
-      __assoc__:
         -
           - default
           - ''
+    -
+      __assoc__:
         -
           - label
           - Simplex
         -
           - value
           - simplex
-    -
-      __assoc__:
         -
           - default
           - ''
+    -
+      __assoc__:
         -
           - label
           - Slate
         -
           - value
           - slate
-    -
-      __assoc__:
         -
           - default
-          - '1'
+          - ''
+    -
+      __assoc__:
         -
           - label
           - Spacelab
         -
           - value
           - spacelab
-    -
-      __assoc__:
         -
           - default
-          - ''
+          - '1'
+    -
+      __assoc__:
         -
           - label
           - Superhero
         -
           - value
           - superhero
-    -
-      __assoc__:
         -
           - default
           - ''
+    -
+      __assoc__:
         -
           - label
           - United
         -
           - value
           - united
-    -
-      __assoc__:
         -
           - default
           - ''
+    -
+      __assoc__:
         -
           - label
           - Yeti
         -
           - value
           - yeti
+        -
+          - default
+          - ''
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Dropdown

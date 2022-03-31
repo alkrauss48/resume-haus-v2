@@ -3,14 +3,21 @@ fieldLayouts:
   96b1bb31-02b7-4102-9a17-5be5db081dc9:
     tabs:
       -
-        fields:
-          afbe8279-652f-48ee-983f-65a2bcc79c87: # Heading
-            required: true
-            sortOrder: 1
+        elements:
+          -
+            fieldUid: afbe8279-652f-48ee-983f-65a2bcc79c87 # Heading
+            instructions: null
+            label: null
+            required: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   afbe8279-652f-48ee-983f-65a2bcc79c87: # Heading
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: heading
@@ -18,11 +25,14 @@ fields:
     name: Heading
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
       placeholder: 'e.g. About'
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

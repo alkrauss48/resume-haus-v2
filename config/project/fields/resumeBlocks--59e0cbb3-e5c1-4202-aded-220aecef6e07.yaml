@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: 20d0b3c0-e1c3-4ba1-8258-808332239fba # Default
 handle: resumeBlocks
@@ -7,7 +8,9 @@ searchable: true
 settings:
   contentTable: '{{%matrixcontent_resumeblocks}}'
   maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Matrix

@@ -3,26 +3,57 @@ fieldLayouts:
   e667add5-be7d-47b3-9420-be069536759a:
     tabs:
       -
-        fields:
-          5e9f447d-cf2f-4c03-9e6e-ebe07ae771fe: # Attendance Dates
-            required: false
-            sortOrder: 4
-          5ea67989-623f-4c1b-b05d-4b3a1b0101f6: # Main Content
-            required: false
-            sortOrder: 5
-          129a5baa-a91b-4c89-bb3a-ca5118cfa43c: # Degree Title
-            required: false
-            sortOrder: 3
-          a1c9e1f0-740b-49c8-a06a-14405ce4a443: # School Name
-            required: false
-            sortOrder: 1
-          b01e6431-581e-4b15-870d-2c1b6ea3029b: # School Location
-            required: false
-            sortOrder: 2
+        elements:
+          -
+            fieldUid: a1c9e1f0-740b-49c8-a06a-14405ce4a443 # School Name
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b01e6431-581e-4b15-870d-2c1b6ea3029b # School Location
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 129a5baa-a91b-4c89-bb3a-ca5118cfa43c # Degree Title
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5e9f447d-cf2f-4c03-9e6e-ebe07ae771fe # Attendance Dates
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5ea67989-623f-4c1b-b05d-4b3a1b0101f6 # Main Content
+            instructions: null
+            label: null
+            required: 0
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
   5e9f447d-cf2f-4c03-9e6e-ebe07ae771fe: # Attendance Dates
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: attendanceDates
@@ -30,30 +61,48 @@ fields:
     name: 'Attendance Dates'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
       placeholder: 'e.g. August 2008 - May 2012'
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   5ea67989-623f-4c1b-b05d-4b3a1b0101f6: # Main Content
-    contentColumnType: string
+    columnSuffix: null
+    contentColumnType: text
     fieldGroup: null
     handle: mainContent
     instructions: 'The main body that you wish to write about what you did at this school.'
     name: 'Main Content'
     searchable: true
     settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
       cleanupHtml: '1'
       columnType: text
-      configFile: ''
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
       purifyHtml: ''
+      redactorConfig: ''
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
   129a5baa-a91b-4c89-bb3a-ca5118cfa43c: # Degree Title
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: degreeTitle
@@ -61,15 +110,19 @@ fields:
     name: 'Degree Title'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
       placeholder: 'e.g. Bachelor of Science'
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   a1c9e1f0-740b-49c8-a06a-14405ce4a443: # School Name
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: schoolName
@@ -77,15 +130,19 @@ fields:
     name: 'School Name'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
       placeholder: 'e.g. University of Oklahoma'
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
   b01e6431-581e-4b15-870d-2c1b6ea3029b: # School Location
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: schoolLocation
@@ -93,11 +150,14 @@ fields:
     name: 'School Location'
     searchable: true
     settings:
-      charLimit: ''
+      byteLimit: null
+      charLimit: null
+      code: false
       columnType: text
       initialRows: '4'
       multiline: ''
       placeholder: 'e.g. Norman, OK'
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

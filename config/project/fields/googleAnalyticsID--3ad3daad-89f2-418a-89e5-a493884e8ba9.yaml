@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: text
 fieldGroup: 20d0b3c0-e1c3-4ba1-8258-808332239fba # Default
 handle: googleAnalyticsID
@@ -5,11 +6,14 @@ instructions: 'Optional. Google Analytics is a way to track how many viewers hav
 name: 'Google Analytics ID'
 searchable: true
 settings:
-  charLimit: ''
+  byteLimit: null
+  charLimit: null
+  code: false
   columnType: text
   initialRows: '4'
   multiline: ''
   placeholder: 'e.g. UA-12345678-9'
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText
