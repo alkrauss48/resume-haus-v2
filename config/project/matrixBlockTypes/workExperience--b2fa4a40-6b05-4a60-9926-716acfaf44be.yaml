@@ -1,31 +1,31 @@
-field: 59e0cbb3-e5c1-4202-aded-220aecef6e07
+field: 59e0cbb3-e5c1-4202-aded-220aecef6e07 # Resume Blocks
 fieldLayouts:
   e564e02d-5066-4de7-af01-1e5e17e04268:
     tabs:
       -
         fields:
-          5e7c1a3c-fb71-4178-8ece-e873e7e0d0cc:
+          5e7c1a3c-fb71-4178-8ece-e873e7e0d0cc: # Job Title
             required: false
             sortOrder: 4
-          6e129f3a-b85f-4131-95fc-e202a39a8a73:
+          6e129f3a-b85f-4131-95fc-e202a39a8a73: # Company Location
             required: false
             sortOrder: 3
-          30f68721-b84b-4481-af19-8dce25d3560d:
+          30f68721-b84b-4481-af19-8dce25d3560d: # Company name
             required: false
             sortOrder: 1
-          c667b680-8bdb-4574-a436-74f70b26caa0:
+          c667b680-8bdb-4574-a436-74f70b26caa0: # Main Content
             required: false
             sortOrder: 6
-          d77a7ce8-8506-448a-90bc-8f425f273d60:
+          d77a7ce8-8506-448a-90bc-8f425f273d60: # Company Website
             required: false
             sortOrder: 2
-          f513dbac-d077-49f1-9d17-7ca2343506c6:
+          f513dbac-d077-49f1-9d17-7ca2343506c6: # Dates Employed
             required: false
             sortOrder: 5
         name: Content
         sortOrder: 1
 fields:
-  5e7c1a3c-fb71-4178-8ece-e873e7e0d0cc:
+  5e7c1a3c-fb71-4178-8ece-e873e7e0d0cc: # Job Title
     contentColumnType: text
     fieldGroup: null
     handle: jobTitle
@@ -41,7 +41,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  6e129f3a-b85f-4131-95fc-e202a39a8a73:
+  6e129f3a-b85f-4131-95fc-e202a39a8a73: # Company Location
     contentColumnType: text
     fieldGroup: null
     handle: companyLocation
@@ -57,7 +57,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  30f68721-b84b-4481-af19-8dce25d3560d:
+  30f68721-b84b-4481-af19-8dce25d3560d: # Company name
     contentColumnType: text
     fieldGroup: null
     handle: companyName
@@ -73,7 +73,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  c667b680-8bdb-4574-a436-74f70b26caa0:
+  c667b680-8bdb-4574-a436-74f70b26caa0: # Main Content
     contentColumnType: string
     fieldGroup: null
     handle: mainContent
@@ -88,7 +88,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
-  d77a7ce8-8506-448a-90bc-8f425f273d60:
+  d77a7ce8-8506-448a-90bc-8f425f273d60: # Company Website
     contentColumnType: text
     fieldGroup: null
     handle: companyWebsite
@@ -104,7 +104,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  f513dbac-d077-49f1-9d17-7ca2343506c6:
+  f513dbac-d077-49f1-9d17-7ca2343506c6: # Dates Employed
     contentColumnType: text
     fieldGroup: null
     handle: datesEmployed

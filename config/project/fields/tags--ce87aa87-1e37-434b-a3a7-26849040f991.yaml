@@ -1,12 +1,12 @@
 contentColumnType: string
-fieldGroup: 20d0b3c0-e1c3-4ba1-8258-808332239fba
+fieldGroup: 20d0b3c0-e1c3-4ba1-8258-808332239fba # Default
 handle: tags
 instructions: null
 name: Tags
 searchable: true
 settings:
   localizeRelations: false
-  source: 'taggroup:002700d7-3cc2-48c4-82ee-439ae5a69938'
+  source: 'taggroup:002700d7-3cc2-48c4-82ee-439ae5a69938' # Default
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Tags
