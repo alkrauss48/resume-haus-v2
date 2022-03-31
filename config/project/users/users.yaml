@@ -1,0 +1,7 @@
+allowPublicRegistration: true
+defaultGroup: d5c91b95-b14e-408f-b385-d26531ac875b # Member
+photoSubpath: null
+photoVolumeUid: 725539d5-3688-4c5d-9d49-42c27cee20eb # User Photos
+requireEmailVerification: true
+suspendByDefault: false
+validateOnPublicRegistration: false
