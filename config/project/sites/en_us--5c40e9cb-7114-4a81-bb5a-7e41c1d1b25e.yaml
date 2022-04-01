@@ -1,4 +1,4 @@
-baseUrl: 'http://resume.thecodeboss.dev'
+baseUrl: $PRIMARY_SITE_URL
 enabled: true
 handle: en_us
 hasUrls: true
