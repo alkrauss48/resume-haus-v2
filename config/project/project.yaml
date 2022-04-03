@@ -1,9 +1,14 @@
-dateModified: 1648845207
+dateModified: 1648865593
 email:
   fromEmail: alkrauss48@gmail.com
-  fromName: Resume
-  template: null
-  transportType: craft\mail\transportadapters\Sendmail
+  fromName: 'Resume Haus'
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    password: $GMAIL_PASSWORD
+    timeout: '10'
+    username: $GMAIL_USERNAME
+  transportType: craft\mail\transportadapters\Gmail
 meta:
   __names__:
     0d19ae45-54ba-4439-831a-bb675aa51e81: List # List
