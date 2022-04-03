@@ -36,6 +36,13 @@
 
 				<div id="examples" class="wrapper">
 					<section class="container">
+
+						{% if craft.app.session.hasFlash('notice') %}
+							<p class="alert success">{{ craft.app.session.getFlash('notice') }}</p>
+						{% elseif craft.app.session.hasFlash('error') %}
+							<p class="alert danger">{{ craft.app.session.getFlash('error') }}</p>
+						{% endif %}
+
 						<header class="major">
 							<h2>Check out the different resume themes we offer</h2>
 							<ul class="actions major">
@@ -83,6 +90,8 @@
 									{{ csrfInput() }}
 									{{ actionInput('users/save-user') }}
 									{{ redirectInput('') }}
+									{{ failMessageInput('There were errors submitting your registration. See below.') }}
+									{{ successMessageInput('Your registration was successful! Check your email to verify your account.') }}
 
 									<div class="row gtr-50">
 										<div class="col-4 col-12-mobile">

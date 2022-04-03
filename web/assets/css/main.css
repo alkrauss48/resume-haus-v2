@@ -3075,3 +3075,28 @@ input, select, textarea {
 			}
 
 	}
+
+/* Custom */
+.alert {
+  border: black 1px solid;
+  padding: 1em;
+  border-radius: 10px;
+  margin-bottom: 3em;
+}
+
+.alert.danger {
+  background-color: #ffcdcd;
+  border-color: red;
+}
+
+.alert.success {
+  background-color: #b4ffb4;
+  border-color: lightgreen;
+}
+
+.errors {
+  color: red;
+  list-style: none;
+  padding: 0;
+  margin: 0.25em 0;
+}
