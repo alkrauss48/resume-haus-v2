@@ -2,6 +2,11 @@
 namespace modules;
 
 use Craft;
+use craft\base\Element;
+use craft\elements\User;
+use craft\events\ModelEvent;
+use craft\helpers\ElementHelper;
+use yii\base\Event;
 
 /**
  * Custom module class.
@@ -40,5 +45,31 @@ class Module extends \yii\base\Module
         parent::init();
 
         // Custom initialization code goes here...
+        Event::on(
+          User::class,
+          Element::EVENT_BEFORE_SAVE,
+          function(ModelEvent $event) {
+            /* @var User $entry */
+            $entry = $event->sender;
+
+            if (ElementHelper::isDraftOrRevision($entry)) {
+              // don’t do anything with drafts or revisions
+              return;
+            }
+
+            if(Craft::$app->getRequest()->getIsSiteRequest())
+            {
+              $password = Craft::$app->getRequest()->getBodyParam('password');
+              $passwordConfirm = Craft::$app->getRequest()->getBodyParam('passwordConfirm');
+
+              if (isset($passwordConfirm) && strcmp($password, $passwordConfirm) !== 0) {
+                $event->sender->addErrors([
+                  'password' => 'Passwords do not match.'
+                ]);
+                $event->isValid = false;
+              }
+            }
+          }
+        );
     }
 }

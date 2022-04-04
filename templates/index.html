@@ -93,7 +93,7 @@
 								<form method="post" accept-charset="UTF-8">
 									{{ csrfInput() }}
 									{{ actionInput('users/save-user') }}
-									{{ redirectInput('') }}
+									{{ redirectInput('/') }}
 									{{ failMessageInput('There were errors submitting your registration. See below.') }}
 									{{ successMessageInput('Your registration was successful! Check your email to verify your account.') }}
 
@@ -141,6 +141,14 @@
 												placeholder: 'Password',
 											}) }}
 											{{ user ? _self.errorList(user.getErrors('password')) }}
+										</div>
+
+										<div class="col-4 col-12-mobile">
+											{{ input('password', 'passwordConfirm', null, {
+												id: 'passwordConfirm',
+												placeholder: 'Password Confirmation',
+											}) }}
+											{{ user ? _self.errorList(user.getErrors('passwordConfirm')) }}
 										</div>
 
 										<ul class="col-12 actions">

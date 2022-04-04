@@ -1,4 +1,4 @@
-dateModified: 1648865593
+dateModified: 1649035516
 email:
   fromEmail: alkrauss48@gmail.com
   fromName: 'Resume Haus'
@@ -70,5 +70,6 @@ system:
   edition: pro
   live: true
   name: 'Resume Haus'
+  retryDuration: null
   schemaVersion: 3.7.33
   timeZone: UTC
