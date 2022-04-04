@@ -90,6 +90,9 @@
 								{# `user` is defined if the form returns validation errors. #}
 								{% set user = user ?? null %}
 
+								{% if craft.app.session.hasFlash('notice') %}
+									<p class="alert success">{{ craft.app.session.getFlash('notice') }}</p>
+								{% endif %}
 								<form method="post" accept-charset="UTF-8">
 									{{ csrfInput() }}
 									{{ actionInput('users/save-user') }}
@@ -158,7 +161,7 @@
 									</div>
 								</form>
 							</section>
-						</div>
+							</div>
 					</div>
 					<div id="copyright" class="container">
 						<ul class="menu">
