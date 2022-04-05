@@ -10,11 +10,7 @@ services:
     depends_on:
       - db
     volumes:
-      - ./config:/app/config
-      - ./modules:/app/modules
-      - ./templates:/app/templates
-      - ./storage:/app/storage
-      - ./web:/app/web
+      - .:/app
 
   db:
     build:
