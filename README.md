@@ -1,4 +1,4 @@
-[Resume Haus](https://resume.thecodeboss.dev)
+[Resume Haus](https://resumeha.us)
 ===
 
 Built by [Aaron Krauss](https://thecodeboss.dev)
@@ -15,7 +15,7 @@ docker-compose up
 * Click "Install Craft"
 * Fill out the information
 
-Currently failing with "Install failed 😞"
+<b>NOTE:</b> Currently failing with "Install failed 😞"
 
 ## To Run
 ```
