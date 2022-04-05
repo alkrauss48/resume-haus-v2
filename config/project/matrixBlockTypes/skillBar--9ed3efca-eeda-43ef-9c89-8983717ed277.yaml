@@ -8,7 +8,7 @@ fieldLayouts:
             fieldUid: 246ac786-a0a2-4cc2-9753-faf42e7db69d # Skill Title
             instructions: null
             label: null
-            required: 0
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -17,7 +17,7 @@ fieldLayouts:
             fieldUid: 465b0663-a60a-44ba-9868-6299b27b2e73 # Skill Percentage
             instructions: null
             label: null
-            required: 0
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -36,7 +36,7 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: false
+      code: ''
       columnType: text
       initialRows: '4'
       multiline: ''
@@ -59,7 +59,7 @@ fields:
       max: 100
       min: 0
       prefix: null
-      previewCurrency: null
+      previewCurrency: ''
       previewFormat: decimal
       size: null
       suffix: null

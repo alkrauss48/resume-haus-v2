@@ -8,7 +8,7 @@ fieldLayouts:
             fieldUid: bb855769-7e53-4719-99d3-1291dc1ea6cd # Body
             instructions: null
             label: null
-            required: 0
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -27,18 +27,18 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      cleanupHtml: '1'
+      cleanupHtml: true
       columnType: text
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: null
+      purifierConfig: ''
       purifyHtml: ''
       redactorConfig: ''
-      removeEmptyTags: true
-      removeInlineStyles: true
-      removeNbsp: true
-      showHtmlButtonForNonAdmins: true
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: '1'
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
       uiMode: enlarged

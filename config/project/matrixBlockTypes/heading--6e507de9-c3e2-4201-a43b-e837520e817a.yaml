@@ -8,7 +8,7 @@ fieldLayouts:
             fieldUid: afbe8279-652f-48ee-983f-65a2bcc79c87 # Heading
             instructions: null
             label: null
-            required: 1
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -27,7 +27,7 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: false
+      code: ''
       columnType: text
       initialRows: '4'
       multiline: ''

@@ -7,8 +7,8 @@ name: 'Resume Blocks'
 searchable: true
 settings:
   contentTable: '{{%matrixcontent_resumeblocks}}'
-  maxBlocks: null
-  minBlocks: null
+  maxBlocks: ''
+  minBlocks: ''
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null
