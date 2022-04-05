@@ -2026,6 +2026,15 @@ input, select, textarea {
 			border-color: rgba(243, 88, 88, 0.5);
 		}
 
+		input[type="button"]:focus,
+		input[type="submit"]:focus,
+		input[type="reset"]:focus,
+		button:focus,
+		.button:focus {
+			color: #f35858;
+			border-color: rgba(243, 88, 88, 0.5);
+		}
+
 /* Icons */
 
 	.icon {
@@ -2314,7 +2323,7 @@ input, select, textarea {
 			font-size: 1.25em;
 		}
 
-			#hero .button:hover {
+			#hero .button:hover, #hero .button:focus {
 				border-color: rgba(255, 255, 255, 0.75);
 				background-color: rgba(255, 255, 255, 0.15);
 				color: #fff;
