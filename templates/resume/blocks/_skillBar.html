@@ -6,9 +6,11 @@
         <p><span class="label label-default visible-xs">{{ block.skillTitle }}</span></p>
       </div>
       <div class="col-sm-8">
+        {% if block.skillPercentage %}
         <div class="progress">
           <div class="progress-bar" style="width: {{ block.skillPercentage }}%;"></div>
         </div>
+        {% endif %}
       </div>
     </div>
   </div>
