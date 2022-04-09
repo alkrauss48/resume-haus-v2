@@ -1822,7 +1822,9 @@ input, select, textarea {
 	}
 
 		ul.actions.major {
+			max-width: 50em;
 			text-align: center;
+			margin: 0 auto;
 		}
 
 		ul.actions li {
