@@ -2354,7 +2354,6 @@ input, select, textarea {
 		#promo h2 {
 			color: #fff;
 			display: inline-block;
-			margin-right: 1em;
 			font-size: 1.75em;
 		}
 
@@ -2544,7 +2543,6 @@ input, select, textarea {
 
 				#promo h2 {
 					display: block;
-					margin: 0 0 1em 0;
 					font-size: 1.5em;
 				}
 
@@ -2741,7 +2739,7 @@ input, select, textarea {
 				#logo a {
 					border: solid 1px rgba(255, 255, 255, 0.75);
 					border-radius: 0.35em;
-					height: 3em;
+					height: 4em;
 					line-height: 3em;
 				}
 
@@ -3085,27 +3083,47 @@ input, select, textarea {
 
 	}
 
-/* Custom */
-.alert {
-  border: black 1px solid;
-  padding: 1em;
-  border-radius: 10px;
-  margin-bottom: 3em;
-}
+	/* Custom */
+	.alert {
+		border: black 1px solid;
+		padding: 1em;
+		border-radius: 10px;
+		margin-bottom: 3em;
+	}
 
-.alert.danger {
-  background-color: #ffcdcd;
-  border-color: red;
-}
+	.alert.danger {
+		background-color: #ffcdcd;
+		border-color: red;
+	}
 
-.alert.success {
-  background-color: #b4ffb4;
-  border-color: lightgreen;
-}
+	.alert.success {
+		background-color: #b4ffb4;
+		border-color: lightgreen;
+	}
 
-.errors {
-  color: red;
-  list-style: none;
-  padding: 0;
-  margin: 0.25em 0;
-}
+	.errors {
+		color: red;
+		list-style: none;
+		padding: 0;
+		margin: 0.25em 0;
+	}
+
+	.fluidMedia-wrapper {
+		margin: 0 auto;
+		max-width: 50em;
+	}
+
+	.fluidMedia {
+		position: relative;
+		padding-bottom: 56.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+		height: 0;
+		overflow: hidden;
+	}
+
+	.fluidMedia iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
