@@ -40,6 +40,12 @@
 
 				<div class="wrapper">
 					<section class="container">
+						{% if craft.app.session.hasFlash('notice') %}
+							<p class="alert success">{{ craft.app.session.getFlash('notice') }}</p>
+						{% elseif craft.app.session.hasFlash('error') %}
+							<p class="alert danger">{{ craft.app.session.getFlash('error') }}</p>
+						{% endif %}
+
 						<header class="major">
 							<h2>What is Resume Haus?</h2>
 						</header>
@@ -92,12 +98,6 @@
 
 				<div id="examples" class="wrapper">
 					<section class="container">
-
-						{% if craft.app.session.hasFlash('notice') %}
-							<p class="alert success">{{ craft.app.session.getFlash('notice') }}</p>
-						{% elseif craft.app.session.hasFlash('error') %}
-							<p class="alert danger">{{ craft.app.session.getFlash('error') }}</p>
-						{% endif %}
 
 						<header class="major">
 							<h2>Check out the different resume themes we offer</h2>
