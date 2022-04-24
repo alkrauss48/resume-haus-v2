@@ -36,7 +36,6 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      cleanupHtml: true
       columnType: text
       configSelectionMode: choose
       defaultTransform: ''
@@ -76,4 +75,4 @@ fields:
     type: craft\fields\PlainText
 handle: list
 name: List
-sortOrder: 6
+sortOrder: 7

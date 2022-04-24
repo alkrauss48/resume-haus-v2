@@ -1,0 +1,9 @@
+<div class="row">
+	<div class="col-sm-12">
+		{% for tag in block.skills %}
+		<span class="label label-{{ block.color }} size-{{ block.fontSize }}">
+			{{ tag.title }}
+		</span>
+		{% endfor %}
+	</div>
+</div>

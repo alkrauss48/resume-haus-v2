@@ -1,4 +1,4 @@
-dateModified: 1649179420
+dateModified: 1650830893
 email:
   fromEmail: alkrauss48@gmail.com
   fromName: 'Resume Haus'
@@ -22,6 +22,7 @@ meta:
     6e129f3a-b85f-4131-95fc-e202a39a8a73: 'Company Location' # Company Location
     6e507de9-c3e2-4201-a43b-e837520e817a: Heading # Heading
     7f7aa23e-bcb7-4e8b-825b-28bcd7f1e639: 'Phone Number' # Phone Number
+    8d65f317-3465-4339-8d34-5e3248dc3bf4: Skills # Skills
     9ed3efca-eeda-43ef-9c89-8983717ed277: 'Skill Bar' # Skill Bar
     20d0b3c0-e1c3-4ba1-8258-808332239fba: Default # Default
     30f68721-b84b-4481-af19-8dce25d3560d: 'Company name' # Company name
@@ -32,17 +33,20 @@ meta:
     388a1cf0-91d1-46e9-864e-6177844d9933: Theme # Theme
     465b0663-a60a-44ba-9868-6299b27b2e73: 'Skill Percentage' # Skill Percentage
     002700d7-3cc2-48c4-82ee-439ae5a69938: Default # Default
+    90002edf-f01c-40de-8338-a944fdec53aa: 'Font Size' # Font Size
     725539d5-3688-4c5d-9d49-42c27cee20eb: 'User Photos' # User Photos
     3579409d-3cc9-4c7a-a65e-a675bfe120a3: 'Resume Haus (en-US)' # Resume Haus (en-US)
     71317842-4cbf-4e25-b59e-0e913fb93ab4: 'List Body' # List Body
     a1c9e1f0-740b-49c8-a06a-14405ce4a443: 'School Name' # School Name
     ab190f80-0964-4731-abc6-ab7cd74765b7: Education # Education
+    ae152ba3-ff5f-4324-a2f2-e215401a3dac: Color # Color
     afbe8279-652f-48ee-983f-65a2bcc79c87: Heading # Heading
     b01e6431-581e-4b15-870d-2c1b6ea3029b: 'School Location' # School Location
     b2fa4a40-6b05-4a60-9926-716acfaf44be: 'Work Experience' # Work Experience
     b8ecbf09-4ee4-4ccc-98be-1531b42d28b1: Text # Text
     b1728805-d5d0-44a4-a498-b609f35b1361: 'Web Site' # Web Site
     bb855769-7e53-4719-99d3-1291dc1ea6cd: Body # Body
+    bd7f9fbf-edfc-4603-b3ae-b8511dfd40a8: Skills # Skills
     c5ff41e6-e696-45f2-b7c3-9ae40be874bc: 'Email Address' # Email Address
     c667b680-8bdb-4574-a436-74f70b26caa0: 'Main Content' # Main Content
     ce87aa87-1e37-434b-a3a7-26849040f991: Tags # Tags
@@ -51,6 +55,7 @@ meta:
     f080972b-de4b-4ebe-90b8-c1dc5a3bb815: 'List Title' # List Title
     f76db532-04ed-40c2-89d4-bef9ec936640: GHomepage # GHomepage
     f513dbac-d077-49f1-9d17-7ca2343506c6: 'Dates Employed' # Dates Employed
+    fa667bb2-b87e-4e41-a0ff-a242fc191503: 'Skill Tags' # Skill Tags
 plugins:
   contact-form:
     enabled: '0'

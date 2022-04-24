@@ -132,7 +132,6 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      cleanupHtml: true
       columnType: text
       configSelectionMode: choose
       defaultTransform: ''
@@ -192,4 +191,4 @@ fields:
     type: craft\fields\PlainText
 handle: workExperience
 name: 'Work Experience'
-sortOrder: 5
+sortOrder: 4

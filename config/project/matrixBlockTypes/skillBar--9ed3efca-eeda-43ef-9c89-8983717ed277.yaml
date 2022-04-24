@@ -68,4 +68,4 @@ fields:
     type: craft\fields\Number
 handle: skillBar
 name: 'Skill Bar'
-sortOrder: 3
+sortOrder: 6

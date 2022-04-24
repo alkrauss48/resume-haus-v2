@@ -1,0 +1,179 @@
+field: 59e0cbb3-e5c1-4202-aded-220aecef6e07 # Resume Blocks
+fieldLayouts:
+  5d610490-4e30-4013-8f28-d65642eb2405:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 8d65f317-3465-4339-8d34-5e3248dc3bf4 # Skills
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ae152ba3-ff5f-4324-a2f2-e215401a3dac # Color
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 90002edf-f01c-40de-8338-a944fdec53aa # Font Size
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  8d65f317-3465-4339-8d34-5e3248dc3bf4: # Skills
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: skills
+    instructions: 'Type to add as many skills as you want.'
+    name: Skills
+    searchable: false
+    settings:
+      allowLimit: false
+      allowMultipleSources: false
+      allowSelfRelations: false
+      limit: null
+      localizeRelations: false
+      selectionLabel: 'Add a skill'
+      showSiteMenu: true
+      source: 'taggroup:bd7f9fbf-edfc-4603-b3ae-b8511dfd40a8' # Skills
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Tags
+  90002edf-f01c-40de-8338-a944fdec53aa: # Font Size
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: fontSize
+    instructions: 'Select the font size of the skill tags'
+    name: 'Font Size'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Normal
+            -
+              - value
+              - normal
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Large
+            -
+              - value
+              - large
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  ae152ba3-ff5f-4324-a2f2-e215401a3dac: # Color
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: color
+    instructions: 'Select the color of the skill tags'
+    name: Color
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Primary
+            -
+              - value
+              - primary
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Secondary
+            -
+              - value
+              - default
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Success
+            -
+              - value
+              - success
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Danger
+            -
+              - value
+              - danger
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Warning
+            -
+              - value
+              - warning
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Info
+            -
+              - value
+              - info
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: skillTags
+name: 'Skill Tags'
+sortOrder: 5
