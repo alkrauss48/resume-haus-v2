@@ -1,18 +1,26 @@
 name: ci
 
-on:
-  push:
-    branches:
-      - 'master'
+on: push
 
 jobs:
   build-web:
     runs-on: ubuntu-latest
-    name: Build Resume Haus Web Docker Image
+    name: Build Web
     steps:
       -
         name: Checkout
         uses: actions/checkout@v2
+      -
+        name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v3
+        with:
+          images: alkrauss48/resume-haus
+          tags: |
+            type=ref,prefix=dev-,event=branch
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}
+            type=semver,pattern={{major}}.{{minor}}
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
@@ -30,14 +38,27 @@ jobs:
           context: .
           file: docker/web/Dockerfile
           push: true
-          tags: alkrauss48/resume-haus:latest
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+
   build-db:
     runs-on: ubuntu-latest
-    name: Build Resume Haus DB Docker Image
+    name: Build DB
     steps:
       -
         name: Checkout
         uses: actions/checkout@v2
+      -
+        name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v3
+        with:
+          images: alkrauss48/resume-haus-db
+          tags: |
+            type=ref,prefix=dev-,event=branch
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}
+            type=semver,pattern={{major}}.{{minor}}
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
@@ -55,4 +76,5 @@ jobs:
           context: .
           file: docker/db/Dockerfile
           push: true
-          tags: alkrauss48/resume-haus-db:latest
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
