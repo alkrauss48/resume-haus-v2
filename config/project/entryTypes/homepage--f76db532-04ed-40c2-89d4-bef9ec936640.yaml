@@ -58,6 +58,15 @@ fieldLayouts:
       -
         elements:
           -
+            fieldUid: 8eae62a0-694f-467a-b27d-965dd09fb1d3 # Resume Type
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 59e0cbb3-e5c1-4202-aded-220aecef6e07 # Resume Blocks
             instructions: null
             label: null

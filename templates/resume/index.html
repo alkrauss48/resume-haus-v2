@@ -2,14 +2,14 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>{{ entry.title }} Curriculum Vitae</title>
+		<title>{{ entry.title }} - {{ entry.resumeType|default('Resume') }}</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Cirriculum Vitae for {{ entry.title }}">
+		<meta name="description" content="{{ entry.resumeType|default('Resume') }} for {{ entry.title }}">
 		<meta name="author" content="Aaron L. Krauss">
 
-		<meta property="og:title" content="{{ entry.title }} Curriculum Vitae" />
-		<meta name="og:description" content="Cirriculum Vitae for {{ entry.title }}">
+		<meta property="og:title" content="{{ entry.title }} - {{ entry.resumeType|default('Resume') }}" />
+		<meta name="og:description" content="{{ entry.resumeType|default('Resume') }} for {{ entry.title }}">
 		<meta property="og:url" content="{{ entry.url }}" />
 		<meta property="og:type" content="website" />
 		<meta name="twitter:card" content="summary_large_image" />

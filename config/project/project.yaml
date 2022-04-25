@@ -1,4 +1,4 @@
-dateModified: 1650830893
+dateModified: 1650854877
 email:
   fromEmail: alkrauss48@gmail.com
   fromName: 'Resume Haus'
@@ -23,6 +23,7 @@ meta:
     6e507de9-c3e2-4201-a43b-e837520e817a: Heading # Heading
     7f7aa23e-bcb7-4e8b-825b-28bcd7f1e639: 'Phone Number' # Phone Number
     8d65f317-3465-4339-8d34-5e3248dc3bf4: Skills # Skills
+    8eae62a0-694f-467a-b27d-965dd09fb1d3: 'Resume Type' # Resume Type
     9ed3efca-eeda-43ef-9c89-8983717ed277: 'Skill Bar' # Skill Bar
     20d0b3c0-e1c3-4ba1-8258-808332239fba: Default # Default
     30f68721-b84b-4481-af19-8dce25d3560d: 'Company name' # Company name

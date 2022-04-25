@@ -1,7 +1,7 @@
 <header class="jumbotron">
   <div class="row">
     <div class="col-md-12">
-      <h3>Curriculum Vitae for</h3>
+      <h3>{{ entry.resumeType|default("Resume") }} for</h3>
       <h1>{{ entry.title }}</h1>
       <address>
         {% if entry.webSite %}

@@ -1,0 +1,35 @@
+columnSuffix: udyytmat
+contentColumnType: string
+fieldGroup: 20d0b3c0-e1c3-4ba1-8258-808332239fba # Default
+handle: resumeType
+instructions: 'The type of resume. This will appear in the header of your resume.'
+name: 'Resume Type'
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Resume
+        -
+          - value
+          - Resume
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Curriculum Vitae'
+        -
+          - value
+          - 'Curriculum Vitae'
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown
