@@ -137,7 +137,7 @@ fields:
       defaultTransform: ''
       manualConfig: ''
       purifierConfig: ''
-      purifyHtml: ''
+      purifyHtml: '1'
       redactorConfig: ''
       removeEmptyTags: '1'
       removeInlineStyles: '1'
