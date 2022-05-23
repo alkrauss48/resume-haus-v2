@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-sm-12">
-		{% for tag in block.skills %}
+		{% for tag in block.skills.all() %}
 		<span class="label label-{{ block.color }} size-{{ block.fontSize }}">
 			{{ tag.title }}
 		</span>
